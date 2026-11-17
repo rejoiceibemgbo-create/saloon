@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#261B18" />
+      <stop offset="100%" stop-color="#140D0B" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DFB8" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7E38" />
+    </linearGradient>
+    <linearGradient id="blushGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7EBE7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Outer Background -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="2" />
+  
+  <!-- Subtle Internal Glow Ring -->
+  <circle cx="32" cy="32" r="26" fill="url(#blushGlow)" stroke="#C5A880" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.6" />
+
+  <!-- Elegant Serif Monogram "V" -->
+  <text 
+    x="32" 
+    y="42" 
+    text-anchor="middle" 
+    font-family="'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, serif" 
+    font-size="34" 
+    font-weight="600" 
+    font-style="italic" 
+    fill="url(#goldGrad)"
+  >V</text>
+
+  <!-- Delicate Sparkle Accent -->
+  <path 
+    d="M44 18 C44 21 46 22 47 22 C46 22 44 23 44 26 C44 23 42 22 41 22 C42 22 44 21 44 18 Z" 
+    fill="#F7EBE7" 
+    opacity="0.9"
+  />
+  <circle cx="21" cy="23" r="1.2" fill="#D4AF37" opacity="0.8" />
+</svg>
